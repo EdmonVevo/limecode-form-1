@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Fredoka One', cursive;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(45deg, #068881, #2fb4e8, #e9567d, #e6532d, #ee7642, #5ab72f);
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.input_wrapper {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_wrapper:hover .line {
+    width: 90%;
+   background: -webkit-linear-gradient(10deg, #068881, #2fb4e8, #e9567d, #2ff4e8);
+   background: -o-linear-gradient(10deg, #068881, #2fb4e8, #e9567d, #2ff4e8);
+   background: linear-gradient(100deg, #068881, #2fb4e8, #e9567d, #2ff4e8);
+}
+
+.form_wrapper input,
+.form_wrapper button {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 -2px 14px 4px #121212b3;
+  box-sizing: border-box;
+}
+
+.form_wrapper button {
+  width: 100%;
+  text-transform: uppercase;
+  background: linear-gradient(145deg, #068881, #2fb4e8, #e9567d, #e6532d, #ee7642, #5ab72f);
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.line {
+  width: 0%;
+  height: 6px;
+  background: black;
+  border-radius: 25px;
+  background: #ffffff5c;
+  transition: 300ms all ease;
+}
+
+h1 {
+  color: #efefef;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
